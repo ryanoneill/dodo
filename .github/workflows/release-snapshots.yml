@@ -30,9 +30,9 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - uses: olafurpg/setup-scala@v7
+      - uses: olafurpg/setup-scala@v10
         with:
-          java-version: openjdk@1.8
+          java-version: adopt@1.8
       - uses: olafurpg/setup-gpg@v3
       - name: checkout/util
         uses: actions/checkout@v2.3.4
