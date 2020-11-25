@@ -17,14 +17,7 @@ env:
 defaults:
   run:
     shell: bash
-on:
-  repository_dispatch:
-    types: [release-snapshots]
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    # run every night at 8AM UTC (1AM PT)
-    - cron: '0 8 * * *'
-
+on: [push]
 jobs:
   release-snapshots:
     runs-on: ubuntu-latest
